@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,5 +35,25 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.movies-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  width: 80%;
+  margin: 20px 10%;
+  background-color: #61dafb;
 }
 
+.item{
+    
+    border: 1px solid red;
+    text-align: center;
+    color: white;
+}
+
+#filters{
+    color: white;
+    
+}

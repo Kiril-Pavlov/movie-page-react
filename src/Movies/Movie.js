@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import './FetchMovie.css';
 
 function Movie(props) {
         

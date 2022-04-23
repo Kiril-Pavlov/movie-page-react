@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios"
-import './FetchMovie.css';
 
 import Movie from "./Movie";
 import SearchFilterMovies from "./SearchFilterMovies";
@@ -27,7 +26,7 @@ function FetchMovies(){
 
     return <div>
         <SearchFilterMovies/>
-        <div id="main-container">
+        <div className="main-container">
             {movies.map(movie => <Movie movieTitle={movie.title} movieImg={movie.medium_cover_image} movieGenre={movie.genres} /> )}
         </div>
     </div>
