@@ -26,8 +26,8 @@ function FetchMovies(){
 
     return <div>
         <SearchFilterMovies/>
-        <div className="main-container">
-            {movies.map(movie => <Movie movieTitle={movie.title} movieImg={movie.medium_cover_image} movieGenre={movie.genres} /> )}
+        <div className="movies-container">
+            {movies.map(movie => <Movie movieTitle={movie.title} movieImg={movie.medium_cover_image} movieGenre={movie.genres.join()} movieRating={movie.rating}/> )}
         </div>
     </div>
 }

@@ -1,49 +1,20 @@
-/* .App {
-  text-align: center;
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .movies-container{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
   grid-gap: 10px;
   width: 80%;
   margin: 20px 10%;
-  background-color: #61dafb;
 }
 
 .item{
@@ -51,6 +22,24 @@
     border: 1px solid red;
     text-align: center;
     color: white;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.item img{
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.movie-title{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.movie-genres{
+
 }
 
 #filters{

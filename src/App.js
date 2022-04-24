@@ -4,6 +4,7 @@ import BoilingWater from './components/BoilingWater';
 import FetchUsers from './components/FetchUsers';
 import User from './components/User';
 import FetchMovies from './Movies/FetchMovies';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
