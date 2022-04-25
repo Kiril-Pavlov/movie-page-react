@@ -5,44 +5,120 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: black;
+:root{
+  --dark:rgb(18, 4, 27);
+  --light:rgb(57, 10, 87);
+}
+
+#root{
+  background-color: var(--dark);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+  padding: 20px;
 }
 
 .movies-container{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
   width: 80%;
   margin: 20px 10%;
+  justify-content: center;
 }
 
 .item{
-    
-    border: 1px solid red;
+    width: 300px;
     text-align: center;
-    color: white;
-    background-color: grey;
-    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--light);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.4);
 }
 
 .item img{
-  padding: 10px;
-  width: 90%;
-  border-radius: 10px;
+  width: 100%;
+}
+
+.movie-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
 .movie-title{
   font-size: 20px;
   font-weight: 700;
-
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .movie-genres{
+  font-style: italic;
+}
+
+.movie-rating{
+  background-color: var(--dark);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-input{
+  display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--light);
+}
+
+.search-input input{
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 2px solid var(--light);
+  width: 500px;
+}
+
+.search-input button{
+  color: white;
+  background-color: var(--light);
+  padding: 5px 20px;
+  border-radius: 20px;
 
 }
 
-#filters{
-    color: white;
-    
+.filters-container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--light);
+}
+
+.dropdown-button{
+  background-color: var(--dark);
+}
+
+.dropdown-option{
+  background-color: var(--light);
+}
+
+.filters-container button{
+  color: white;
+  background-color: var(--light);
+  padding: 5px 20px;
+  border-radius: 20px;
+
+}
+
+.filters-container label{
+  font-size: 20px;
 }
