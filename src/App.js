@@ -16,6 +16,7 @@ function App() {
         {/* <BoilingWater/> */}
         {/* <FetchUsers/> */}
         <FetchMovies/>
+        Test
       </header>
     </div>
   );

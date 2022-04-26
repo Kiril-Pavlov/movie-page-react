@@ -84,7 +84,7 @@ function FetchMovies() {
             </div>
         </header>
         <div id="movies-container" className="movies-container">
-            {movies.map(movie => <Movie key={movie.id} movieTitle={movie.title} movieImg={movie.medium_cover_image} movieGenre={movie.genres.join(", ")} movieRating={movie.rating} />)}
+            {movies.map(movie => <Movie key={movie.id} movieTitle={movie.title} movieImg={movie.medium_cover_image} movieGenre={movie.genres} movieRating={movie.rating} />)}
         </div>
     </div>
 }
